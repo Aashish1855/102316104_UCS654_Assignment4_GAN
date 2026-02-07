@@ -14,6 +14,8 @@ b_r = 0.3 (r mod 5 + 1)
 
 ## Transformation Parameter
 ar=1.0,br=1.5
+## GAN Architecture
+A simple fully connected GAN is employed, where the generator takes 1-D Gaussian noise as input and learns a nonlinear mapping to approximate the target data distribution. The discriminator is a multi-layer perceptron trained to classify real samples and generator-produced samples, enabling adversarial learning.
 ## GAN Training Loss Log
 
 | Epoch | Discriminator Loss (D) | Generator Loss (G) |
